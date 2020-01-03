@@ -16,8 +16,6 @@ end
 
 roll_call_dwarves(dwarves)
 
-planeteer_calls = %w[earth wind fire water heart]
-
 def summon_captain_planet# code an argument here
   planeteer_calls.map { |call| call.capitalize + '!' }
 end
@@ -30,14 +28,8 @@ end
 
 long_planeteer_calls(planeteer_calls)
 
-potentially_cheesy_items = %w[umbrella spinach cheddar helicopter]
-
-def find_the_cheese(potentially_cheesy_items)
-  cheeses = %w[gouda cheddar camembert]
-
-  potentially_cheesy_items.find do |maybe_cheese|
-    cheeses.include?(maybe_cheese)
-  end
+def find_the_cheese# code an argument here
+  # the array below is here to help
+  cheese_types = ["cheddar", "gouda", "camembert"]
+  
 end
-
-find_the_cheese(potentially_cheesy_items)
